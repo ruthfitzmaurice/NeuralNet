@@ -10,11 +10,15 @@ After initialising the network, the program calls the feed forward method to upd
 
 The feedForward method is used to propogate input values into a network through the full network (i.e. each neuron) in one direction only. 
 Data starts at the input layer and is forced into the input layer neurons, this is the first stage whereby the neurons have no processing power (the input layer neurons output value = input value).
-The data from the input layer neuron outputs is then propogated into the hidden layer neurons. This is the second stage of the feedforward method. 
+The data from the input layer neuron outputs is then propogated into the hidden layer neurons. This is the second stage of the feedforward method.
+
+
 In the second stage, neurons on the hidden and output layer have to do some processing. There are two stages in the non-input layer processing: 
 
 1. Calculate the equivalent input on each neuron port using the standard equation : input value on that port (coming from previous layer neuron) * weight on that port
-2. Calculate a sum of all weighted inputs including the bias neuron
+2. Calculate a sum of all weighted inputs including the bias neuron. The psuedo code for this calculation can be seen below: 
+    `pseudo code for n_sum = n_sum + (previous layer neuron output value) * (previous layer neuron weight to THIS neurons on the hidden layer/output layer)`
+               
 3. Send this sum into a transfer function method, here we are using the standard tanh method. This is use to shape the neurons output. 
 4. Neuron takes the value outputted by the transfer function and updates its output value
 
