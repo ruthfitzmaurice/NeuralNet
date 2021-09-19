@@ -4,7 +4,19 @@
 
 ### Overview
 
-The git repo contains my project for the Udacity C++ Nanodegree Program. For this project I have created the framework for a nerual network. The program gets user input which decides the dimensions of the network i.e. how many neurons will exist on the input, hidden (middle) and output layer. User input is also needed to determine the input values that the users wants to feed into the input layer neurons. The program will then continue to create multiple types of objects: a single neural network, multiple layers and multiple neurons. After initialising the network, the program will feed forward the input values into the input layer neurons, and the network feedforward method propogates input values throughout the entire network. 
+The git repo contains my project for the Udacity C++ Nanodegree Program. For this project I have created the framework for a nerual network. The program gets user input which decides the dimensions of the network i.e. how many neurons will exist on the input, hidden (middle) and output layer. User input is also needed to determine the input values that the users wants to feed into the input layer neurons. The program will then continue to create multiple types of objects: a single neural network, multiple layers and multiple neurons. The program also connects all neurons together in a highly connected way i.e each neuron on layer[i] gets is being fed from all neurons on layer[i-1] including a bias neuron. 
+
+After initialising the network, the program calls the feed forward method to update neurons output values depending on their position in the network and the neurons feeding into them. 
+
+The feedForward method is used to propogate input values into a network through the full network (i.e. each neuron) in one direction only. 
+Data starts at the input layer and is forced into the input layer neurons, this is the first stage whereby the neurons have no processing power (the input layer neurons output value = input value).
+The data from the input layer neuron outputs is then propogated into the hidden layer neurons. This is the second stage of the feedforward method. 
+In the second stage, neurons on the hidden and output layer have to do some processing. There are two stages in the non-input layer processing: 
+
+1. Calculate the equivalent input on each neuron port using the standard equation : input value on that port (coming from previous layer neuron) * weight on that port
+2. Calculate a sum of all weighted inputs including the bias neuron
+3. Send this sum into a transfer function method, here we are using the standard tanh method. This is use to shape the neurons output. 
+4. Neuron takes the value outputted by the transfer function and updates its output value
 
 This project does not create a fully functioning neural network i.e. the project does not support functionality for the network to learn from training data. The project creates the framework for a network and then forward propogates input values throughout the network.
 

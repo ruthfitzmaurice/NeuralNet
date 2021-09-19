@@ -5,6 +5,7 @@
 #include "neuron.h"
 #include <assert.h>
 #include <fstream>
+#include <math.h>
 
 
 
