@@ -1,4 +1,8 @@
-Overview
+# Udacity CPP Nanodegree Capstone Project
+
+## Neural Network Initializer
+
+### Overview
 
 The git repo contains my project for the Udacity C++ Nanodegree Program. For this project I have created the framework for a nerual network. The program gets user input which decides the dimensions of the network i.e. how many neurons will exist on the input, hidden (middle) and output layer. User input is also needed to determine the input values that the users wants to feed into the input layer neurons. The program will then continue to create multiple types of objects: a single neural network, multiple layers and multiple neurons. After initialising the network, the program will feed forward the input values into the input layer neurons, and the network feedforward method propogates input values throughout the entire network. 
 
@@ -7,7 +11,7 @@ This project does not create a fully functioning neural network i.e. the project
 The project follows the logic from the following: http://www.millermattson.com/dave/?p=54
 
 
-File Structure
+### File Structure
 This repository contains:
 .cpp files: main.cpp. neural_network.cpp, layer.cpp and neuron.cpp 
 .h files: neural_network.h, layer.h and neuron.h
@@ -17,7 +21,7 @@ CMakeLists.txt : a cmake configuration file withh all settings needed to run the
 
 README.md : This file
 
-Dependencies for Running Locally
+### Dependencies for Running Locally
 cmake >= 2.8
 
 
@@ -29,7 +33,7 @@ Enter the root dir of the project
  
 cp NeuralNet
 
-Running the program
+### How to Run the program
 
 First run cmake and make from current directory:
 
@@ -83,5 +87,7 @@ The executeable will also print out status updates as the feedforward method occ
 ******** Program has ended with all neurons updated ********
 
 
-Rubric: 
+### Rubric
+
+
 
