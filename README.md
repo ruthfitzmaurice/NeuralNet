@@ -89,10 +89,32 @@ cp NeuralNet
 
 __README (All Rubric Points REQUIRED)__
 
-|DONE | CRITERIA | MEETS SPECIFICATIONS| `` |
+|DONE | CRITERIA | MEETS SPECIFICATIONS| WHERE |
 |-- | -- | --| -- |
 | :heavy_check_mark: | A README with instructions is included with the project |The README is included with the project and has instructions for building/running the project. If any additional libraries are needed to run the project, these are indicated with cross-platform installation instructions. You can submit your writeup as markdown or pdf.| |
 | :heavy_check_mark: | The README indicates which project is chosen. | The README describes the project you have built. The README also indicates the file and class structure, along with the expected behavior or output of the program. | |
 | :heavy_check_mark: | The README includes information about each rubric point addressed. | The README indicates which rubric points are addressed. The README also indicates where in the code (i.e. files and line numbers) that the rubric points are addressed. | |
 
+__Compiling and Testing (All Rubric Points REQUIRED)__
 
+|DONE | CRITERIA | MEETS SPECIFICATIONS| WHERE |
+|-- | -- | --| -- |
+| :heavy_check_mark: | The submission must compile and run. | The project code must compile and run without errors. We strongly recommend using cmake and make, as provided in the starter repos. If you choose another build system, the code must compile on any reviewer platform. |
+
+__Loops, Functions, I/O__
+
+|DONE | CRITERIA | MEETS SPECIFICATIONS| WHERE |
+|-- | -- | --| -- |
+| :heavy_check_mark: | The project demonstrates an understanding of C++ functions and control structures.| A variety of control structures are used in the project. The project code is clearly organized into functions.| 4 .cpp files (main.cpp, neural_network.cpp, layer.cpp, neuron.cpp) use functions and control loops for functionality.|
+| :heavy_check_mark: | The project accepts user input and processes the input.|The project accepts input from a user as part of the necessary operation of the program.|  The user is asked for input in main.cpp which determines the dimensions of the neural network being created. |
+
+__Object Oriented Programming__
+
+|DONE | CRITERIA | MEETS SPECIFICATIONS| WHERE |
+|-- | -- | --| -- |
+| :heavy_check_mark: | The project uses Object Oriented Programming techniques. | The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks. | Each .cpp and .h file use Object Oreinted Programming concepts such as classes and member variables/methods. |
+| :heavy_check_mark: | Classes use appropriate access specifiers for class members. | All class data members are explicitly specified as public, protected, or private.| All files in this project use appropriate public and private accessors. |
+| :heavy_check_mark: | Class constructors utilize member initialization lists. | All class members that are set to argument values are initialized through member initialization lists.| All class constructors in .h files construct member values |
+| :heavy_check_mark: | Classes abstract implementation details from their interfaces. | All class member functions document their effects, either through function names, comments, or formal documentation. Member functions do not change program state in undocumented ways.| All .cpp files and .h files contain member functions names which are descriptive and explanation its purpose in the program. |
+| :heavy_check_mark: | Classes encapsulate behavior. | Appropriate data and functions are grouped into classes. Member data that is subject to an invariant is hidden from the user. State is accessed via member functions.| All .cpp and .h files show objects are encapsulated|
+| 
