@@ -34,63 +34,62 @@ cp NeuralNet
 
 ### How to Run the program
 
-First run cmake and make from current directory:
+- First run cmake and make from current directory:
 
-cmake .
-make
+`cmake .`
+`make`
 
-An executable called NeuralNet is created in the currect directory and can be ran using:
+- An executable called NeuralNet is created in the currect directory and can be ran using:
 
-./NeuralNet 
+`./NeuralNet` 
 
-The executeable will then ask the user for information on network dimensions. Enter integer value and press enter, eg:
+- The executeable will then ask the user for information on network dimensions. Enter integer value and press enter, eg:
 
-******** This program will initialise a 3 layer nerual network of your choice ********
-Please enter the number of neurons you would like on the input layer: 3
-Please enter the number of neurons you would like on the hidden (middle) layer: 2
-Please enter the number of neurons you would like on the output layer: 1
+`******** This program will initialise a 3 layer nerual network of your choice ********`
+`Please enter the number of neurons you would like on the input layer: `3
+`Please enter the number of neurons you would like on the hidden (middle) layer: `2
+`Please enter the number of neurons you would like on the output layer: `1
 
 
-The executeable will then as the user for input values for the input layer neurons. Enter as a DOUBLE and press enter, eg: 
+- The executeable will then as the user for input values for the input layer neurons. Enter as a DOUBLE and press enter, eg: 
 
-Please enter the value (as a double e.g. 1.0) you would like to assign to neuron 0 of the input layer
+`Please enter the value (as a double e.g. 1.0) you would like to assign to neuron 0 of the input layer`
 1.2
-Please enter the value (as a double e.g. 1.0) you would like to assign to neuron 1 of the input layer
+`Please enter the value (as a double e.g. 1.0) you would like to assign to neuron 1 of the input layer`
 1.4
 
-The executeable will then print out status updates as objects are created, eg when initialising a network :
+- The executeable will then print out status updates as objects are created, eg when initialising a network :
 
-******** Initializing a neural network ********
-        Making layer: 0
-        - Making neuron 0 on layer 0
-        - Making neuron 1 on layer 0
-        - Making neuron 2 on layer 0
-        Making layer: 1
-        - Making neuron 0 on layer 1
-        - Making neuron 1 on layer 1
-        Making layer: 2
-        - Making neuron 0 on layer 2
-        - Making neuron 1 on layer 2
-        - Making neuron 2 on layer 2
+`******** Initializing a neural network ********`
+       `Making layer: 0`
+        `- Making neuron 0 on layer 0`
+        `- Making neuron 1 on layer 0`
+        `- Making neuron 2 on layer 0`
+        `Making layer: 1`
+        `- Making neuron 0 on layer 1`
+        `- Making neuron 1 on layer 1`
+        `Making layer: 2`
+        `- Making neuron 0 on layer 2`
+        `- Making neuron 1 on layer 2`
+        `- Making neuron 2 on layer 2`
 
-The executeable will also print out status updates as the feedforward method occurs eg:
+- The executeable will also print out status updates as the feedforward method occurs eg:
 
-******** Starting Feedforward Method ********
-        Setting input layer neurons output values 
-        - Layer 0 neuron: 0 has output value: 1.2
-        - Layer 0 neuron: 1 has output value: 1.4
-        Setting hidden/output layer neurons output values 
-        - Layer 1 neuron: 0 has output value: 0.182108
-        - Layer 2 neuron: 0 has output value: 0.0833302
-        - Layer 2 neuron: 1 has output value: 0.096718
-******** Program has ended with all neurons updated ********
-
+`******** Starting Feedforward Method ********`
+        `Setting input layer neurons output values `
+        `- Layer 0 neuron: 0 has output value: 1.2`
+        `- Layer 0 neuron: 1 has output value: 1.4`
+        `Setting hidden/output layer neurons output values `
+        `- Layer 1 neuron: 0 has output value: 0.182108`
+        `- Layer 2 neuron: 0 has output value: 0.0833302`
+        `- Layer 2 neuron: 1 has output value: 0.096718`
+`******** Program has ended with all neurons updated ********`
 
 ### Rubric
 
 __README (All Rubric Points REQUIRED)__
 
-|DONE | CRITERIA | MEETS SPECIFICATIONS| WHERE |
+|DONE | CRITERIA | MEETS SPECIFICATIONS| `` |
 |-- | -- | --| -- |
 | :heavy_check_mark: | A README with instructions is included with the project |The README is included with the project and has instructions for building/running the project. If any additional libraries are needed to run the project, these are indicated with cross-platform installation instructions. You can submit your writeup as markdown or pdf.| |
 | :heavy_check_mark: | The README indicates which project is chosen. | The README describes the project you have built. The README also indicates the file and class structure, along with the expected behavior or output of the program. | |
