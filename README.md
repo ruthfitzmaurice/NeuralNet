@@ -1,6 +1,6 @@
 # Udacity CPP Nanodegree Capstone Project
 
-## Neural Network Initializer
+## Three Layer Neural Network Initializer Program
 
 ### Overview
 
@@ -13,23 +13,22 @@ The project follows the logic from the following: http://www.millermattson.com/d
 
 ### File Structure
 This repository contains:
-.cpp files: main.cpp. neural_network.cpp, layer.cpp and neuron.cpp 
-.h files: neural_network.h, layer.h and neuron.h
-
-
-CMakeLists.txt : a cmake configuration file withh all settings needed to run the program
-
-README.md : This file
+- .cpp files: main.cpp. neural_network.cpp, layer.cpp and neuron.cpp 
+- .h files: neural_network.h, layer.h and neuron.h
+- CMakeLists.txt : a cmake configuration file withh all settings needed to run the program
+- README.md : This file
 
 ### Dependencies for Running Locally
 cmake >= 2.8
 
 
-Build Instructions
+### Build Instructions
 
-This current repo can be cloned using git clone
+This current repo can be cloned using git clone:
 
-Enter the root dir of the project
+git clone https://github.com/ruthfitzmaurice/NeuralNet.git
+
+Enter the root dir of the project:
  
 cp NeuralNet
 
@@ -89,5 +88,12 @@ The executeable will also print out status updates as the feedforward method occ
 
 ### Rubric
 
+__README (All Rubric Points REQUIRED)__
+
+|DONE | CRITERIA | MEETS SPECIFICATIONS| WHERE |
+|-- | -- | --| -- |
+| :heavy_check_mark: | A README with instructions is included with the project |The README is included with the project and has instructions for building/running the project. If any additional libraries are needed to run the project, these are indicated with cross-platform installation instructions. You can submit your writeup as markdown or pdf.| |
+| :heavy_check_mark: | The README indicates which project is chosen. | The README describes the project you have built. The README also indicates the file and class structure, along with the expected behavior or output of the program. | |
+| :heavy_check_mark: | The README includes information about each rubric point addressed. | The README indicates which rubric points are addressed. The README also indicates where in the code (i.e. files and line numbers) that the rubric points are addressed. | |
 
 
